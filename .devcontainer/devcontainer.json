@@ -1,0 +1,37 @@
+{
+	"name": "Container Notebook",
+	"image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+			"version": "prerelease"
+		},
+		"ghcr.io/jsburckhardt/devcontainer-features/uv:1": {}
+	},
+	"postCreateCommand": {
+		"setupEnvironment": "sudo chown -R $(whoami): ${containerWorkspaceFolder}/.venv"
+	},
+	"mounts": [
+		"target=${containerWorkspaceFolder}/.venv,type=volume"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"quarto.quarto",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.vscode-jupyter-powertoys",
+				"ms-python.mypy-type-checker",
+				"mechatroner.rainbow-csv",
+				"charliermarsh.ruff",
+				"Posit.shiny",
+				"myriad-dreamin.tinymist",
+				"ms-toolsai.datawrangler",
+				"tamasfe.even-better-toml"
+			]
+		}
+	},
+	"containerEnv": {
+		"UV_LINK_MODE": "copy",
+		"UV_SYSTEM_PYTHON": "1"
+	},
+	"postStartCommand": "[ -f pyproject.toml ] && uv sync || echo '    No pyproject.toml found, skipping uv sync.\n    If this is a new workspace, run uv init.'"
+}
