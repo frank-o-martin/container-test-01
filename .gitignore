@@ -1,5 +1,9 @@
 # macOS
 .Trash*
+.DS_Store
+
+# Mounted volumes
+data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

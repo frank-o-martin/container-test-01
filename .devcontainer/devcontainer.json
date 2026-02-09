@@ -11,7 +11,8 @@
 		"setupEnvironment": "sudo chown -R $(whoami): ${containerWorkspaceFolder}/.venv"
 	},
 	"mounts": [
-		"target=${containerWorkspaceFolder}/.venv,type=volume"
+		"target=${containerWorkspaceFolder}/.venv,type=volume",
+		"source=/Volumes/OWC 1TB/data/osm,target=${containerWorkspaceFolder}/data,type=bind,consistency=cached"
 	],
 	"customizations": {
 		"vscode": {
