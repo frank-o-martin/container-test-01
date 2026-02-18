@@ -12,7 +12,7 @@
 	},
 	"mounts": [
 		"target=${containerWorkspaceFolder}/.venv,type=volume",
-		"source=/Volumes/OWC 1TB/data/osm,target=${containerWorkspaceFolder}/data,type=bind,consistency=cached"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/data,target=${containerWorkspaceFolder}/data,type=bind,consistency=cached"
 	],
 	"customizations": {
 		"vscode": {
