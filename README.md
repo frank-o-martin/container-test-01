@@ -22,3 +22,5 @@ uv run jupyter-lab
 See [mount](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount) and [env](https://code.visualstudio.com/remote/advancedcontainers/environment-variables) for more information.
 
 source=${localEnv:HOME}${localEnv:USERPROFILE}/data
+
+## git from devcontainer
