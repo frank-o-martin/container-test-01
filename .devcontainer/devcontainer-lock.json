@@ -1,0 +1,14 @@
+{
+  "features": {
+    "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/jsburckhardt/devcontainer-features/uv@sha256:542a0bc2203205b3c696de650ba862f280b20af3543493cc232edd9ac35791f7",
+      "integrity": "sha256:542a0bc2203205b3c696de650ba862f280b20af3543493cc232edd9ac35791f7"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "1.1.5",
+      "resolved": "ghcr.io/rocker-org/devcontainer-features/quarto-cli@sha256:7d1ba1c977b72d616e76089f016c87c1a581a05386aee635bae08e5a1375507d",
+      "integrity": "sha256:7d1ba1c977b72d616e76089f016c87c1a581a05386aee635bae08e5a1375507d"
+    }
+  }
+}
